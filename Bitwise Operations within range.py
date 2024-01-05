@@ -1,3 +1,4 @@
+import math
 #and,xor,or for given array within limits
 a=list(map(int,input().split()))
 n=int(math.log2(max(a)))
