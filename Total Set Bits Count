@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int countSetBits(int n)
+{
+        int c =0;
+        while (n >= 1) {
+            int b = static_cast<int>(log2(n));
+            c += ((pow(2, b)/2)*b) + 1 + n - pow(2,b);
+            n -= pow(2, b);
+        }
+        return c;
+}
+int main(){
+  int n;
+  cin>>n;
+  cout<<countSetBits(n);
+}
