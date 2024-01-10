@@ -16,3 +16,6 @@ int main(){
     }
     cout<<res;
 }
+
+//O(log N)
+//O(1)
